@@ -1,0 +1,175 @@
+<html>
+    <head>
+        <link rel="stylesheet" href="style.css">
+        <title>GGCodes-TIC TAC TOE game in Scratch</title>
+        <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css"> 
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"> </script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Anton&family=Are+You+Serious&family=Poppins:ital,wght@0,500;0,800;1,600&display=swap" rel="stylesheet">
+    </head>
+    <body>
+
+       <!--Menu Part srt-->
+       <center>
+        <ul class="mnu">
+            <li class="join"><a href="#design">Designing</a></li>
+            <li class="join"><a href="#simple">Simple Part</a></li>
+            <li class="join"><a href="#variable">Variable</a></li>
+            <li class="join"><a href="#hard">Hard Part</a></li>
+            <li class="join"><a href="#final">Output</a></li>
+            <li class="join"><a href="#files">Files</a></li>
+        </ul>
+       </center>
+       <!--Menu Part end-->
+
+       <!--Heading-->
+       <p id="heading">Tic Tac Toe in Scratch</p>
+       <img id="p1" src="TIC TAC TOE.png">
+       <!--Heading-->
+
+       <!--Staring Design-->
+       <section id="design">
+        <h1>Design</h1>
+        <div class="line"></div>
+        <p>First Of all we will start with designing. Firstly at well go in paint sprite option and then we will paint the coloums and rows or you can download it from the files part. It's better to create your own. After which take button of any kind from choose sprite option or design your own. Next we are going to design two more costumes from the costumes tab for the button. Either you download it
+        form the files area or design your own, it is just a X and a O. It's better if you design your own.
+        </p>
+        <div id="myCarousel"class="carousel slide">
+            <div class="carousel-inner">
+                <div class="item active">
+                    <center>
+                <img src="costume1.png" class="img-responsive">
+                        <div class="carousel-content"><p>Coloumns And Rows</p></div>
+                </center>
+                        </div>
+            <div class="item">
+                <center>
+        <img src="costume2.png" class="img-responsive">
+                <div class="carousel-content"><p>X</p></div>
+                </center>
+            </div>
+            <div class="item">
+                <center>
+                    <img src="o.png" class="img-responsive">
+                    <div class="corousel-content"><p>O</p></div>
+                </center>
+            </div>
+                </div>
+                
+            <a class="left carousel-control" href="#myCarousel"data-slide="prev"><span class="glyphicon glyphicon-chevron-left"></span></a>
+            
+            <a class="right carousel-control" href="#myCarousel"data-slide="next"><span class="glyphicon glyphicon-chevron-right"></span></a>
+        </div>
+
+        <p>After you have done downloading and setting costumes up next we are going to place it some thing like the picture shown below:</p>
+        <img id="p2" src="jil.png"> 
+
+       </section>
+
+       <section id="simple">
+        <h1>Simple Part</h1>
+        <div class="line"></div>
+        <p>This is an optional part you may skip it. It is the part where we will add a background sound. It is upto you if you want to add some sound to make it more interesting. So, lets begin.
+            First you will have to take this <img class="p3" src="p3.png"> block and place it in the block area. Next take a forever loop block to place it below the <img class="p3" src="p3.png">block. After which we will add the 'play sound until done' block inside the 
+            forever loop.Now select the sound will you want to play or use the provided below:
+            
+        </p>
+        <audio controls>
+            <source src = "scracth sound in use.wav" type = "audio/wav">
+         </audio>
+         <p>After everything it should look like this:</p>
+         <img id="p4" src="p4.png">
+       </section>
+
+       <section id="variable">
+        <h1>Variables</h1>
+        <div class="line"></div>
+        <p>Now the most intersting part. Here we will create variables and set them to zero 0 on run.So first lets set our calculations real quick.
+            so what are the winning possibilities in a tic tac toe game. lets see a diagram to understand.    
+        </p>
+        <img src="Untitled design (2).png">
+        <p>These are the only possibilities of winning. The top row (TO & TX), the middle row (MO & MX), bottom row(BO & BX), vertically right, middle, left and Angularly Right to left and left to right.</p>
+        <br>
+        <p>There're 8 winning possibilities. So we will make 8 variables for each X & O. So lets make all the variable.<br>
+        Click on make variable and create the variables, it's upto you what you name it. In our codes it is:<br>
+        <ul id="vari">
+            <li>For the Top row: TO & TX</li>
+            <li>For the middle row: MO & MX</li>
+            <li>For the bottom row: BO & BX</li>
+            <li>For the vertical right: VRO & VRX</li>
+            <li>For the vertical middle: VMO & VMX</li>
+            <li>For the vertical left: VLO & VLX</li>
+            <li>For angular right to left: ALO & ALX</li>
+            <li>For angular left to right: ARO & ARX</li>
+        </ul>
+        <br>
+        </p>
+        <p> After you have created of of the variables it shold look like this (ignore the variable 'ok'):</p>
+        <img src="Screenshot 2022-10-23 111748.png">
+        <p>Lets keep it aside for some time. Still then lets make the other variable required for determining the X or O (player). It will determine what will come next X or O. Lets make the variable for that.<br>
+        click on make a variable and name it as X or O. Name preffered by me. After we have created all the variables, pull<img src="set variable to 0 block.png">block and duplicate it 16 times and place it above the foreverloop. Make sure all the variables are set to 0 on run. Pull out another and set the variable(X or O)to 0 on run.
+        It should look some thing like this:
+        </p>
+        <img src="p5.png">
+       </section>
+
+       <section id="hard">
+        <h1>Hard Part</h1>
+        <div class="line"></div>
+        </section>
+        <section class="info">
+        <p>In this part we will code the existing button and duplicate it eight times. Before doing that lets start of with the coding.
+            we will code the buttons such that when clicked for the first time it shows 'O' and the next it shows 'X'. Lets do this much first. 
+            First we will take a "when this sprite clicked" block and place a 'if...else' block under it. And then we will add the function which will determine whether it will be X or an O.
+            Then we will go to the operators and take a <img src="oprators.png"> block and place the ‘X or O’ variable in the first blank and set the next black to 1. Inside we will set the variable 'X or O' to 0 and switch to the costume including the X, for instance,'costume1'. Now for the else part use <img src="vvv.png"> and set the black area as 1 block  and set the costume to the costume including the O.
+            If you have done till this much correctly it should look some thing like this:
+        </p>
+        <img src="p6.png">
+        <br><br>
+        <p>Now lets start working with the other variables. Lets understand something first: </p>
+        <img id="ss" src="lll;.jpg">
+        <p>Button:<br></p>
+            <ul>
+                <li>On every corner have 3 winning possibilities.</li>
+                <li>In the center have 4 winning possibilities.</li>
+                <li>Of all the other have 2 winning possibilities</li>
+            </ul> 
+            <p>Now we know all the possibilities. Now we will change the possible variables by 1 on click. now in Else part we will give the variable related to O and in the if part we will give the variable related to X.</p>
+            <p>After all of the code is set in the button duplicate it and that area should look like this:</p>
+            <img src="kkk.png">
+            <p>The code should look some thing like this:</p>
+            <img src="lla.png">
+            <p>Next we want to reset everything when run again. So we will Set that when<img src="sart.png"> clicked we will set the button back to button's costume.</p>
+            <img src="ooo.png">
+            <p>Now lets draw the line on winning. First, add an extension ‘pen’ and a sprite, for instance, a pencil. Then go the costumes tab and select the pen by drag selecting and placing the pencil tip on the centre. Now go to blocks, and make your own block from my blocks. And define it. First use a forever loop and place 8 ‘if’ blocks. Now take 2 equals to block and place two variable of the same row of X and O and set the location and perfect angles and set pen down and draw a line of 350 steps. Do the same for the other variables.<br>
+            One of the set of instruction will look something like this:<br><img src="uuuuu.png"><br>The whole code will look like this:<br><img src="pppp.png">
+            </p>
+            <br>
+            <br>
+            <br>
+            <p>These code will draw a line on winning. Next we want to reset it again on run, means to erase all and hide the pencil and set to a location which is inaccessible. So lets do it. Take<img src="p3.png"> block and place hide block then a point to ___ direction block, place erase all place pen up block then a go to  X___ Y___ block .And add the the your made block after it. Few blocks are 
+            optional like set pen size to _______ and set pen color. 
+            </p>
+            <img src="iiiii.png">
+
+       </section>
+
+       <section id="final">
+        <video controls>
+            <source src="Scratch 3.29.1 2022-10-23 21-13-31.mp4" type="video/mp4">
+            </video>
+       </section>
+
+       <section id="files">
+        <h1>Files</h1>
+        <div class="line"></div>
+        <img src="aaaa.png"><br>
+        <input id="enter" placeholder="Write what do you see">
+        <br>
+        <button id="clk" type="submit"><a href="https://drive.google.com/drive/folders/1Wwiyi-Fhdq9ECe1lqX4FUd02gnIP1arb?usp=sharing">SUBMIT</a></button>
+       </section>
+
+    </body>
+</html>
